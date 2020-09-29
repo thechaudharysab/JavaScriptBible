@@ -20,9 +20,9 @@
 //var yearUserWasBornIn = 2020 - 28; //Current year minus age of person
 //console.log(yearUserWasBornIn);
 
-var currentYear = 2020;
-var user1Age = 29;
-var user2Age = 28;
+//var currentYear = 2020;
+//var user1Age = 29;
+//var user2Age = 28;
 //var yearUserWasBornIn = currentYear - user1Age;
 //console.log(yearUserWasBornIn);
 //
@@ -31,8 +31,22 @@ var user2Age = 28;
 //console.log(currentYear / 2);
 
 //logical operator
-var isUser1Older = user1Age > user2Age;
+//var isUser1Older = user1Age > user2Age;
 //console.log(isUser1Older);
 
 //typeof operator
-console.log(typeof isUser1Older);
+//console.log(typeof isUser1Older);
+
+//****Operator Precedence****
+
+//var currentYear = 2020;
+//var yearUser1WasBorn = 1991;
+//var validAge = 18;
+//
+//var isValidAge = currentYear - yearUser1WasBorn >= validAge;
+//console.log(isValidAge);
+
+var user1Age = 29;
+var user2Age = 28;
+var averageAge = (29+28)/2;
+console.log(averageAge);
