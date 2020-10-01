@@ -46,7 +46,70 @@
 //var isValidAge = currentYear - yearUser1WasBorn >= validAge;
 //console.log(isValidAge);
 
-var user1Age = 29;
-var user2Age = 28;
-var averageAge = (29+28)/2;
-console.log(averageAge);
+//var user1Age = 29;
+//var user2Age = 28;
+//var averageAge = (user1Age + user2Age) / 2;
+//console.log(averageAge);
+
+//Multiple assignments
+//var x, y;
+//x = y = (3+5) * 4 - 6;
+//console.log(x, y);
+
+
+//****CODING CHALLENGE 1 SOLUTION****
+////1
+//var markHeight = 1.85928; //in meters
+//var markMass = 70; //in KG
+//
+//var johnHeight = 1.8288;
+//var johnMass = 72;
+////2
+//var markBMI = markMass / (markHeight * markHeight);
+//var johnBMI = johnMass / (johnHeight * johnHeight);
+////3
+//var whohasHigherBMI = markBMI > johnBMI;
+////4
+//console.log("Is Mark's BMI higher than John's?", whohasHigherBMI);
+//*****************************************
+
+
+//****If-Else Statements****
+
+//var firstName = 'John';
+//var maritalStatus = 'Single';
+//
+//
+//if(maritalStatus === 'Married') {
+//    console.log(firstName + ' is married!');
+//} else {
+//    console.log(firstName + ' is not married!');
+//}
+//
+//var isMarried = true;
+//
+//if(isMarried) {
+//    console.log(firstName + ' is married!');
+//} else {
+//    console.log(firstName + ' is not married!');
+//}
+//
+////1
+//var markHeight = 1.85928; //in meters
+//var markMass = 70; //in KG
+//
+//var johnHeight = 1.8288;
+//var johnMass = 72;
+////2
+//var markBMI = markMass / (markHeight * markHeight);
+//var johnBMI = johnMass / (johnHeight * johnHeight);
+////3
+//var whohasHigherBMI = markBMI > johnBMI;
+////4
+//if(markBMI > johnBMI) {
+//    console.log('Mark\'s BMI is greater than John\'s BMI.')
+//} else {
+//    console.log('Mark\'s BMI is not greater than John\'s BMI.')
+//}
+
+//****Boolean Logic****
