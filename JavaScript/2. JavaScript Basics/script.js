@@ -188,10 +188,43 @@
 
 //**** Coding Challenge 2 Solution ****
 
+//var johnGame1 = 89;
+//var johnGame2 = 120;
+//var johnGame3 = 103;
+//
+//var mikeGame1 = 116;
+//var mikeGame2 = 94;
+//var mikeGame3 = 123;
+//
+//var johnAverageScore = (johnGame1+johnGame2+johnGame3)/3;
+//var mikeAverageScore = (mikeGame1+mikeGame2+mikeGame3)/3;
+//
+//if(johnAverageScore > mikeAverageScore) {
+//    console.log('John\'s team won with a total score average of ' + johnAverageScore + ' whereas Mike\'s team scored ' + mikeAverageScore);
+//} else if(johnAverageScore < mikeAverageScore) {
+//    console.log('Mike\'s team won with a total score average of ' + mikeAverageScore + ' whereas John\'s team scored ' + johnAverageScore);
+//} else {
+//    console.log('Both Mike\'s and John\'s score are equal. So, it\'s a draw! Final score: ' + johnAverageScore);
+//}
+//
+////Mary score added
+//var maryGame1 = 97;
+//var maryGame2 = 134;
+//var maryGame3 = 105;
+//
+//var maryAverageScore = (maryGame1+maryGame1+maryGame1)/3;
+//
+//if(johnAverageScore > mikeAverageScore && johnAverageScore > maryAverageScore) {
+//    console.log('John\'s team won with a total score average of ' + johnAverageScore + ' whereas Mike\'s team scored ' + mikeAverageScore + ' and Mary\'s average score is ' + maryAverageScore);
+//} else if(mikeAverageScore > johnAverageScore && mikeAverageScore > maryAverageScore) {
+//    console.log('Mike\'s team won with a total score average of ' + mikeAverageScore + ' whereas John\'s team scored ' + johnAverageScore + ' and Mary\'s average score is ' + maryAverageScore);
+//} else if(maryAverageScore > johnAverageScore && maryAverageScore > mikeAverageScore) {
+//    console.log('Mary\'s team won with a total score average of ' + maryAverageScore + ' whereas John\'s team scored ' + johnAverageScore + ' and Mike\'s average score is ' + mikeAverageScore);
+//} else {
+//    console.log('It\'s a draw');
+//}
 
-
-
-
+//**** Functions ****
 
 
 
