@@ -226,24 +226,37 @@
 
 //**** Functions ****
 
-function calculateAge(birthYear) {
-    return 2020 - birthYear;
-}
+//function calculateAge(birthYear) {
+//    return 2020 - birthYear;
+//}
+//
+//var birthYearOfUser = 1991;
 
-var birthYearOfUser = 1991;
+//console.log(calculateAge(birthYearOfUser));s
+////OR
+//console.log('This User is ' + calculateAge(birthYearOfUser) + ' years old');
+////OR we can also do it like
+//var ageOfUser = calculateAge(birthYearOfUser);
+//console.log('User is ' + ageOfUser + ' years old');
 
-console.log(calculateAge(birthYearOfUser));
-//OR
-console.log('This User is ' + calculateAge(birthYearOfUser) + ' years old');
-//OR we can also do it like
-var ageOfUser = calculateAge(birthYearOfUser);
-console.log('User is ' + ageOfUser + ' years old');
+//function yearsUntilRetirement(yearOfBirth, firstName) {
+//    var age = calculateAge(yearOfBirth);
+//    var retirement = 60 - age;
+//    
+//    if(retirement <= 0) {
+//        console.log(firstName + ' has already retired');
+//    } else if (retirement === 1) {
+//        console.log(firstName + ' retires in ' + retirement + ' year.');
+//    } else {
+//        console.log(firstName + ' retires in ' + retirement + ' years.');
+//    }
+//}
+//
+//yearsUntilRetirement(1991, 'John'); //calling the function
+//yearsUntilRetirement(1948, 'Mike');
 
 
-
-
-
-
+//**** Function Statements & Expessions ****
 
 
 
