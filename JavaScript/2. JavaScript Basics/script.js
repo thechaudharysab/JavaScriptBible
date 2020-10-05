@@ -226,12 +226,18 @@
 
 //**** Functions ****
 
+function calculateAge(birthYear) {
+    return 2020 - birthYear;
+}
 
+var birthYearOfUser = 1991;
 
-
-
-
-
+console.log(calculateAge(birthYearOfUser));
+//OR
+console.log('This User is ' + calculateAge(birthYearOfUser) + ' years old');
+//OR we can also do it like
+var ageOfUser = calculateAge(birthYearOfUser);
+console.log('User is ' + ageOfUser + ' years old');
 
 
 
