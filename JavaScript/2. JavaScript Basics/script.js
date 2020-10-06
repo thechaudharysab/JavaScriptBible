@@ -258,8 +258,57 @@
 
 //**** Function Statements & Expessions ****
 
+//var whatDoYouDo = function(job, firstName) {
+//    switch(job) {
+//        case 'teacher':
+//            return firstName + ' is a teacher';
+//        case 'driver':
+//            return firstName + ' is a driver';
+//        case 'designer':
+//            return firstName + ' is a designer';
+//        default:
+//            return firstName + ' does something else'
+//    }
+//}
+//
+//console.log(whatDoYouDo('teacher', 'John'));
+//console.log(whatDoYouDo('designer', 'Mike'));
+//console.log(whatDoYouDo('retired', 'Mark'));
 
 
+//**** Arrays ****
 
+////Array with 3 elements
+//var names = ['John', 'Mike', 'Mark'];
+////Another way of declaring an array
+//var years = new Array(1990, 1969, 1947);
+//
+////console.log(names[0]);
+////console.log(names);
+////console.log(names.length);
+//
+//names[1] = 'Jane';
+//
+//names[names.length] = 'Mary';
+//names[names.length] = 'Ben';
+//console.log(names);
 
+//First Name, Last Name, Year of Birth, Job, Is marries
+var john = ['John', 'Smith', 1991, 'teacher', false];
 
+//john.push('blue'); //Add element to the end of array i.e. index array.length
+//console.log(john);
+//john.unshift('Mr.'); //Add element to the begning of array i.e. index 0
+//console.log(john);
+//john.pop(); //Removes the last element from the array
+//console.log(john);
+//john.pop(); //Removes the last element from the array
+//console.log(john);
+//john.shift(); //Removes the first element from the array
+//console.log(john);
+//console.log(john.indexOf(1991)); //will return the index of the argunment that we pass inside ot this array
+
+//console.log(john.indexOf(23));
+
+var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John is a designer';
+console.log(isDesigner);
