@@ -344,5 +344,8 @@ var john = {
     lastName: 'Smith',
     birthYear: 1991,
     family: ['Jane', 'Mark', 'Bob', 'Emily'],
-    
-}
+    job: "teacher",
+    isMarried: false
+};
+
+console.log(john);
