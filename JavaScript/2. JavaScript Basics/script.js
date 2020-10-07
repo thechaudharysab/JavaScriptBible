@@ -294,7 +294,7 @@
 //console.log(names);
 
 //First Name, Last Name, Year of Birth, Job, Is marries
-var john = ['John', 'Smith', 1991, 'teacher', false];
+//var john = ['John', 'Smith', 1991, 'teacher', false];
 
 //john.push('blue'); //Add element to the end of array i.e. index array.length
 //console.log(john);
@@ -310,5 +310,39 @@ var john = ['John', 'Smith', 1991, 'teacher', false];
 
 //console.log(john.indexOf(23));
 
-var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John is a designer';
-console.log(isDesigner);
+//var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John is a designer';
+//console.log(isDesigner);
+
+//**** CODING CHALLENGE 3 SOLUTION ****
+//var bills = [124, 48, 268];
+//
+//function calculateTip(bill) {
+//    var tip = 0;
+//    if(bill < 50) {
+//        //20%
+//        return bill*(20/100);
+//    } else if(bill >= 50 && bill <= 200) {
+//        //15%
+//        return bill*(15/100);
+//    } else {
+//        //10%
+//        return bill*(10/100);
+//    }
+//}
+//
+//var tips = [calculateTip(bills[0]), calculateTip(bills[1]), calculateTip(bills[2])];
+//var finalAmounts = [bills[0]+tips[0], bills[1]+tips[1], bills[2]+tips[2]];
+//
+//console.log("Bills are: " + bills);
+//console.log("Tips are: " + tips);
+//console.log("Final amount paid: " + finalAmounts);
+
+//**** Objects and Properties ****
+
+var john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    birthYear: 1991,
+    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+    
+}
