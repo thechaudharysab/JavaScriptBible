@@ -339,13 +339,48 @@
 
 //**** Objects and Properties ****
 
+//var john = {
+//    firstName: 'John',
+//    lastName: 'Smith',
+//    birthYear: 1991,
+//    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+//    job: "teacher",
+//    isMarried: false
+//};
+
+//console.log(john.lastName);
+//console.log(john.job);
+//console.log(john.family[0]);
+
+//console.log(john['lastName']);
+//var x = 'job';
+//console.log(john[x]);
+//console.log(john['family']);
+//console.log(john['family'][0]);
+
+//john.job = 'designer';
+//john['isMarried'] = true;
+//console.log(john);
+
+//var jane = new Object();
+//jane.name = 'Jane';
+//jane.birthYear = 1991;
+//jane['lastName'] = 'Smith';
+//
+//console.log(jane);
+
+//**** Objects and Methods ****
+
 var john = {
     firstName: 'John',
     lastName: 'Smith',
     birthYear: 1991,
     family: ['Jane', 'Mark', 'Bob', 'Emily'],
     job: "teacher",
-    isMarried: false
+    isMarried: false,
+    calcAge: function(birthYear) {
+        return 2020-birthYear;
+    }
 };
 
-console.log(john);
+console.log(john.calcAge(1991));
