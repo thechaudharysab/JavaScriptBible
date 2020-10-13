@@ -371,16 +371,69 @@
 
 //**** Objects and Methods ****
 
-var john = {
-    firstName: 'John',
-    lastName: 'Smith',
-    birthYear: 1991,
-    family: ['Jane', 'Mark', 'Bob', 'Emily'],
-    job: "teacher",
-    isMarried: false,
-    calcAge: function(birthYear) {
-        return 2020-birthYear;
-    }
-};
+//var john = {
+//    firstName: 'John',
+//    lastName: 'Smith',
+//    birthYear: 1991,
+//    family: ['Jane', 'Mark', 'Bob', 'Emily'],
+//    job: "teacher",
+//    isMarried: false,
+//    calcAge: function() {
+//        this.age = 2020-this.birthYear;
+//    }
+//};
+//
+////console.log(john.calcAge());
+//
+////john.age = john.calcAge();
+//
+//john.calcAge();
+//console.log(john);
 
-console.log(john.calcAge(1991));
+//**** Coding challenge 4 solution ****
+
+//var john = {
+//    fullName: "John Smith",
+//    mass: 72,
+//    height: 1.8,
+//    calcBMI: function() {
+//        this.BMI = this.mass / (this.height * this.height);
+//        return this.BMI;
+//    }
+//}
+//
+//var ben = {
+//    fullName: "Ben Smith",
+//    mass: 78,
+//    height: 1.6,
+//    calcBMI: function() {
+//        this.BMI = this.mass / (this.height * this.height);
+//        return this.BMI;
+//    }
+//}
+//
+//john.calcBMI();
+//ben.calcBMI();
+//
+//if(john.BMI > ben.BMI) {
+//   console.log('John\'s BMI ' + john.BMI + ' is higher than Ben\'s BMI ' + ben.BMI); 
+//} else if(john.BMI < ben.BMI) {
+//    console.log('Ben\'s BMI ' + ben.BMI + ' is higher than John\'s BMI ' + john.BMI); 
+//} else {
+//    console.log('John BMI ' + john.BMI + ' and Ben\'s BMI ' + ben.BMI + ' are equal'); 
+//}
+
+//**** Loops & Iterations ****
+for (var i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+//Print values from 1 to 20
+for (var i = 1; i <= 20; i++) {
+    console.log(i);
+}
+
+//Print all odd numbers between 1 to 20
+for (var i = 1; i <= 20; i+=2) {
+    console.log(i);
+}
