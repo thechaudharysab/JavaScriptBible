@@ -424,16 +424,136 @@
 //}
 
 //**** Loops & Iterations ****
-for (var i = 0; i < 10; i++) {
-    console.log(i);
+//for (var i = 0; i < 10; i++) {
+//    console.log(i);
+//}
+//
+////Print values from 1 to 20
+//for (var i = 1; i <= 20; i++) {
+//    console.log(i);
+//}
+//
+////Print all odd numbers between 1 to 20
+//for (var i = 1; i <= 20; i+=2) {
+//    console.log(i);
+//}
+
+//var john = ['John', 'Smith', 1990, 'designer', false];
+////for loop
+//for(var i = 0; i < john.length; i++) {
+//    console.log(john[i]);
+//}
+
+////While Loop
+
+//var i = 0;
+//while(i < john.length) {
+//    console.log(john[i]);
+//    i++;
+//}
+
+////contiue and break statements
+//var john = ['John', 'Smith', 1990, 'designer', false];
+//for(var i = 0; i < john.length; i++) {
+//    if(typeof john[i] !== 'string') break; //continue
+//    console.log(john[i]);
+//}
+
+//Loop backwards
+//var john = ['John', 'Smith', 1990, 'designer', false];
+//for(var i = john.length - 1; i >= 0; i--) {
+//    console.log(john[i]);
+//}
+
+//**** Coding Challenge 5 ****
+
+//Creatte john family object
+var johnFamily = {
+    firstName: 'John',
+    lastName: 'Smith',
+    bills: [124, 48, 268, 180, 42], //all the bills values in an array
+    calcTip: function() {
+        
+        this.tips = []; //new propety tips will be created
+        this.totalPaid = []; //new property totalPaid will be ceated
+        
+        for(var i = 0; i < this.bills.length; i++) {
+            
+            var bill = this.bills[i]; //pick up the current value at index i
+            var tip = 0; //tip variable will be initialized with 0 in every iteration
+            
+            if(bill < 50) {
+                //20%
+                tip = bill*(20/100) //20% tip calculation
+            } else if(bill >= 50 && bill <= 200) {
+                //15%
+                tip = bill*(15/100)
+            } else {
+                //10%
+                tip = bill*(10/100)
+            }
+            
+            this.tips[i] = tip; //adding tip value to the tip poperty just created
+            this.totalPaid[i] = bill+tip; //adding total value to totalPaid pproperty
+            
+        } //End of for-loop
+    } //End of CalcTip
+};
+
+//Creating mark's family object
+var markFamily = {
+    firstName: 'Mark',
+    lastName: 'Smith',
+    bills: [77, 375, 110, 45], //values updated with mark bills
+    calcTip: function() {
+        
+        this.tips = [];
+        this.totalPaid = [];
+        
+        for(var i = 0; i < this.bills.length; i++) {
+            
+            var bill = this.bills[i];
+            var tip = 0;
+            
+            if(bill < 100) {
+                //20%
+                tip = bill*(20/100)
+            } else if(bill >= 100 && bill <= 300) {
+                //10%
+                tip = bill*(10/100)
+            } else {
+                //25%
+                tip = bill*(25/100)
+            }
+            
+            this.tips[i] = tip;
+            this.totalPaid[i] = bill+tip;
+            
+        } //End of for-loop
+    } //End of CalcTip
+};
+
+//Function to calculate average of tips
+function calcAvg(tips) {
+    var sum = 0;
+    for(var i = 0; i < tips.length; i++) {
+        sum = sum + tips[i];
+    }
+    return sum/tips.length;
 }
 
-//Print values from 1 to 20
-for (var i = 1; i <= 20; i++) {
-    console.log(i);
-}
+johnFamily.calcTip(); //calculating tips for john
+markFamily.calcTip(); //calculating tips for mark
+//console.log(johnFamily, markFamily);
 
-//Print all odd numbers between 1 to 20
-for (var i = 1; i <= 20; i+=2) {
-    console.log(i);
+johnFamily.avgTips = calcAvg(johnFamily.tips); //tips average for john getting stored in a new property avgTips
+markFamily.avgTips = calcAvg(markFamily.tips); //tips averrage for mark getting stored in a new property avgTips
+
+//Pringint the final result
+if (johnFamily.avgTips > markFamily.avgTips) {
+    console.log(johnFamily.firstName + '\'s family paid $' + johnFamily.avgTips + ' in tips which is more than what ' + markFamily.firstName + '\'s family pays i.e. $' + markFamily.avgTips);
+} else if(johnFamily.avgTips < markFamily.avgTips) {
+    console.log(markFamily.firstName + '\'s family paid $' + markFamily.avgTips + ' in tips which is more than what ' + johnFamily.firstName + '\'s family pays i.e. $' + johnFamily.avgTips);
+} else {
+    console.log(markFamily.firstName + '\'s family paid $' + markFamily.avgTips + ' in tips and ' + johnFamily.firstName + '\'s family pays i.e. $' + johnFamily.avgTips);
 }
