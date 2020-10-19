@@ -1,0 +1,8 @@
+Recommended Downloads:
+Download Brackets: https://href.li/?http://brackets.io/
+Download Visual Studio Code: https://href.li/?https://code.visualstudio.com/download
+Download Google Chrome: https://www.google.com/chrome/
+
+Optional Downloads:
+Sublime: https://href.li/?https://www.sublimetext.com/3
+Atom Editor: https://href.li/?https://atom.io/
